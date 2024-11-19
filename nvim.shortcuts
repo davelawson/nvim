@@ -1,0 +1,94 @@
+<F1>			Help
+=== TELESCOPE ===
+<C-p>			Find file
+=== NVIM-TREE ===
+:TREE           Open nvim-tree (also called :NvimTreeOpen)
+g?				Show shortcut list
+<C-v>           Open file in a new vertical split.  Specify which window.
+<C-x>           Open file in a new horizontal split.  Specify which winow.
+<C-]>           Set folder as root for tree
+<C-->           Move root of tree one folder up
+a				Create a file or directory
+c               Copy
+p				Paste
+d               Delete
+D               Trash (move to ~/.local/share/Trash/files)
+e               Rename: Basename
+W				Collapse directory
+P				Highlight Parent directory
+f				Filter shown items
+
+=== WINDOWS ===
+<C-h|j|k|l>     Move to split in the specified direction
+CTRL+W, N		Open new empty window above the current window
+:vnew			Open a new buffer
+:sp			    split file top/bottom
+:vsp			split file left/right
+
+=== NAVIGATION ===
+[#]gt			goto next tab
+[#]Gt			goto previous tab
+gf			    goto file
+0			    goto start of line
+f_			goto next occurance of _ on this current line
+#G			goto line #
+/AAAA			search forwards for string AAAA
+?AAAA			search backwards for string AAAA
+n			move to next search hit
+N			move to previous search hit
+CTRL+o			go back
+CTRL+i			go forwards
+%			move to matching bracket/brace/parenthesis/etc.
+
+=== EDITING ===
+u			undo last change
+CTRL+R			un-undo
+
+=== SEARCH ===
+/BLAH[\c]		search for BLAH, \c indicates case-insensitivity
+
+=== SUBSTITUTE ===
+:[S]s/old/new/[g][c]	replace old with new
+	[S]	%	entire file
+		#,#	between lines (inclusive)
+		default	current line
+	[g]		all matches (default is just next match)
+	[c]		request confirmation
+
+=== AUTO COMPLETION ===
+CTRL+Y			Accept Suggestion
+CTRL+N			Next Suggestion
+CTRL+P			Previous Suggestion
+
+=== CHANGE COMMANDS ===
+OCM			Operator - [Count] - Motion
+
+--- OPERATORS ---
+d			delete (action cut)
+r			replace character
+c			change (cut and then enter insert mode)
+p			put (paste) after
+P			put (paste) before
+y			yank (copy)
+
+--- MOTIONS --- 
+b			word start
+e			word end (ie. de to delete to the end of the word)
+w			word (ie. dw to delete a word)
+$			line end (ie. d$ to delete to the end of the line)
+^			line start (ie. d^ to delete to the start of the line)
+
+--- SPECIAL CASES ---
+yy			copy line
+dd			delete line
+
+=== ODDITIES ===
+Counts can be before or after the operator (ie. 2dw or d2w).
+U (undo all changes to line) doesn't seem to work as advertised.
+
+=== MY COMMANDS ===
+:SC			Load this file in a new split
+:RC			Load nvim/init.lua in a new split
+:NOTES			Load ~/notes in a new split
+:TODO			Load ~/todo in a new split
+:SP			Load ~/scratch in a new split
