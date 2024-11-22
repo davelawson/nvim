@@ -8,3 +8,4 @@ vim.api.nvim_create_user_command("NOTES", "e ~/notes", {})
 vim.api.nvim_create_user_command("VIMRC", "e ~/.config/nvim/init.lua", {})
 
 vim.api.nvim_create_user_command("GO", "!go run %", {})
+vim.api.nvim_create_user_command("TT", "terminal", {})
