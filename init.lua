@@ -9,3 +9,6 @@ vim.api.nvim_create_user_command("VIMRC", "e ~/.config/nvim/init.lua", {})
 
 vim.api.nvim_create_user_command("GO", "!go run %", {})
 vim.api.nvim_create_user_command("LUALOG", ":lua Snacks.notifier.show_history()", {})
+
+vim.o.tabstop = 4
+vim.o.shiftwidth = 4 -- Number of spaces inserted when indenting

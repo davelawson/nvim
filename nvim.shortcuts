@@ -26,6 +26,8 @@ CTRL+W, N		Open new empty window above the current window
 :vsp			split file left/right
 
 === NAVIGATION ===
+gg        goto start of file
+G         goto end of file
 [#]gt			goto next tab
 [#]Gt			goto previous tab
 gf			    goto file
