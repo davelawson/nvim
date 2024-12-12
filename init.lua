@@ -1,7 +1,7 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 
-vim.api.nvim_create_user_command("TODO", "e ~/todo", {})
+vim.api.nvim_create_user_command("TODO", "e ~/todo.md", {})
 vim.api.nvim_create_user_command("RC", "e ~/.zshrc", {})
 vim.api.nvim_create_user_command("SC", "e ~/.config/nvim/nvim.shortcuts", {})
 vim.api.nvim_create_user_command("NOTES", "e ~/notes", {})
