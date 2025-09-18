@@ -1,6 +1,10 @@
+=== GLOBAL SEARCH AND REPLACE ===
+:%s/searchForThis/replaceWithThis/g
+
+<S-k>           Show contextual popup code doc tooltip help thing
+<C-w>           While in terminal, enter normal mode
 <F1>			Help
-=== TELESCOPE ===
-<C-p>			Find file
+
 === NVIM-TREE ===
 :TREE           Open nvim-tree (also called :NvimTreeOpen)
 g?				Show shortcut list
@@ -19,8 +23,8 @@ P				Highlight Parent directory
 f				Filter shown items
 
 === WINDOWS ===
-<C-h|j|k|l>     Move to split in the specified direction
-CTRL+W, N		Open new empty window above the current window
+<C-h|j|k|l>     Move to window in the specified direction
+<C-w n>		    Open new empty window above the current window
 :vnew			Open a new buffer
 :sp			    split file top/bottom
 :vsp			split file left/right
@@ -45,6 +49,7 @@ CTRL+i			go forwards
 === EDITING ===
 u			undo last change
 CTRL+R			un-undo
+D           delete to the end of the line
 
 === SEARCH ===
 /BLAH[\c]		search for BLAH, \c indicates case-insensitivity
