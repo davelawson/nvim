@@ -1,11 +1,14 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 
-vim.api.nvim_create_user_command("SP", "e ~/scratchpad.md", {})
-vim.api.nvim_create_user_command("TODO", "e ~/todo.md", {})
-vim.api.nvim_create_user_command("ONCALL", "e ~/oncall.md", {})
-vim.api.nvim_create_user_command("BRUNO", "e ~/bruno.md", {})
-vim.api.nvim_create_user_command("ANDERSON", "e ~/anderson.md", {})
+vim.api.nvim_create_user_command("NOTES", "Explore ~/notes/", {})
+vim.api.nvim_create_user_command("TOPICS", "Explore ~/notes/topics/", {})
+vim.api.nvim_create_user_command("TASKS", "Explore ~/notes/tasks/", {})
+vim.api.nvim_create_user_command("SP", "e ~/notes/scratchpad.md", {})
+vim.api.nvim_create_user_command("TODO", "e ~/notes/todo.md", {})
+vim.api.nvim_create_user_command("ONCALL", "e ~/notes/oncall.md", {})
+vim.api.nvim_create_user_command("BRUNO", "e ~/notes/bruno.md", {})
+vim.api.nvim_create_user_command("ANDERSON", "e ~/notes/anderson.md", {})
 vim.api.nvim_create_user_command("RC", "e ~/.zshrc", {})
 vim.api.nvim_create_user_command("SC", "e ~/.config/nvim/nvim.shortcuts", {})
 vim.api.nvim_create_user_command("VIMRC", "e ~/.config/nvim/init.lua", {})
@@ -23,8 +26,8 @@ vim.keymap.set("t", "<C-w>", [[<C-\><C-n>]], {
   desc = "Exit terminal mode",
 })
 
-vim.opt.grepprg =
-  [[rg --vimgrep --no-heading --smart-case | awk -F: '{n=split($1,a,"/"); if(n>2) print ".../" a[n-1] "/" a[n] ":" $2 ":" $3 ":" $4; else print $1 ":" $2 ":" $3 ":" $4}']]
+-- vim.opt.grepprg =
+--   [[rg --hidden --vimgrep --no-heading --smart-case | awk -F: '{n=split($1,a,"/"); if(n>2) print ".../" a[n-1] "/" a[n] ":" $2 ":" $3 ":" $4; else print $1 ":" $2 ":" $3 ":" $4}']]
 -- vim.opt.grepprg =
 --   'rg --vimgrep --no-heading --smart-case | awk -F: \'{split($1,a,"/"); print a[length(a)-1] "/" a[length(a)] ":" $2 ":" $3 ":" $4}\''
 

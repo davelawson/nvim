@@ -1,3 +1,6 @@
+=== FILE OPERATIONS ===
+:noautocmd w    Save without triggering autocommands (ie. autoformat)
+
 === GLOBAL SEARCH AND REPLACE ===
 :%s/searchForThis/replaceWithThis/g
 
@@ -30,6 +33,7 @@ f				Filter shown items
 :vsp			split file left/right
 
 === NAVIGATION ===
+gx      open hyperlink
 gg        goto start of file
 G         goto end of file
 [#]gt			goto next tab
