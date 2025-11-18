@@ -122,7 +122,13 @@ return {
       }
       require("neotest").setup({
         adapters = {
-          require("neotest-golang")({ sanitize_output = true }),
+          require("neotest-golang")({
+            runner = "gotestsum",
+
+            args = { "-v" },
+            sanitize_output = true,
+            log_level = vim.log.levels.INFO,
+          }),
         },
       })
     end,
