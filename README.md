@@ -60,9 +60,9 @@ tools, and `:checkhealth` to diagnose missing system dependencies.
 
 | Path | Purpose |
 | --- | --- |
-| `init.lua` | Bootstrap plus personal commands and global mappings |
+| `init.lua` | LazyVim bootstrap and custom command loading |
 | `lazyvim.json` | Enabled LazyVim extras |
-| `lua/config/` | Lazy setup, options, keymaps, and autocommands |
+| `lua/config/` | Lazy setup, commands, options, keymaps, and autocommands |
 | `lua/plugins/` | Plugin additions and overrides |
 | `ftplugin/` | Buffer-local settings for individual file types |
 | `filetype.lua` | Additional file-extension detection |

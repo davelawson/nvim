@@ -120,8 +120,10 @@ Example: `:%s/old/new/gc` replaces every `old` in the file after confirmation.
 | Key | Action |
 | --- | --- |
 | `<leader>tn` | Run the nearest test |
+| `<leader>tr` | Run the nearest test (LazyVim default) |
 | `<leader>tf` | Run tests in the current file |
 | `<leader>tA` | Run tests in all files under the working directory |
+| `<leader>tT` | Run all test files (LazyVim default) |
 | `<leader>tS` | Run the test suite |
 | `<leader>tl` | Repeat the last test run |
 | `<leader>ta` | Attach to a running test |
@@ -130,6 +132,7 @@ Example: `:%s/old/new/gc` replaces every `old` in the file after confirmation.
 | `<leader>ts` | Toggle the test summary |
 | `<leader>to` | Open test output |
 | `<leader>tO` | Toggle the test output panel |
+| `<leader>tw` | Toggle watch mode for the current file |
 | `<leader>tt` | Stop the current test run |
 
 ## Personal commands

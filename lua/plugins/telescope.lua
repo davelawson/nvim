@@ -6,8 +6,8 @@ return {
       require("telescope").setup({
         defaults = {
           file_ignore_patterns = {
-            "**/.git/*",
-            "**/CHANGELOG.md",
+            "%.git/",
+            "CHANGELOG%.md$",
           },
           -- This is the table you need to add or edit
           vimgrep_arguments = {
