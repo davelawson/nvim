@@ -114,8 +114,6 @@ Example: `:%s/old/new/gc` replaces every `old` in the file after confirmation.
 | `<leader>xx` | Open diagnostics in Trouble |
 | `<leader>gg` | Open Lazygit at the project root |
 | `<leader>bk` / `<leader>bj` | Move up / down the DAP stack |
-| `<leader>cW` | Open the Metals worksheet hover |
-| `<leader>cM` | Search Metals commands with Telescope |
 
 ### Tests
 
