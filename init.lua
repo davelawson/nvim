@@ -10,7 +10,7 @@ vim.api.nvim_create_user_command("ONCALL", "e ~/notes/oncall.md", {})
 vim.api.nvim_create_user_command("BRUNO", "e ~/notes/bruno.md", {})
 vim.api.nvim_create_user_command("ANDERSON", "e ~/notes/anderson.md", {})
 vim.api.nvim_create_user_command("RC", "e ~/.zshrc", {})
-vim.api.nvim_create_user_command("SC", "e ~/.config/nvim/nvim.shortcuts", {})
+vim.api.nvim_create_user_command("SC", "e ~/.config/nvim/nvim.shortcuts.md", {})
 vim.api.nvim_create_user_command("VIMRC", "e ~/.config/nvim/init.lua", {})
 -- lazy cheat so I don't have to worry about pressing shift while issuing the save all command
 vim.api.nvim_create_user_command("Wa", "wa", {})
