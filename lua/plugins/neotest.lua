@@ -117,9 +117,6 @@ return {
       },
     },
     config = function()
-      local config = {
-        runner = "gotestsum", -- Optional, but recommended
-      }
       require("neotest").setup({
         adapters = {
           require("neotest-golang")({
